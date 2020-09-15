@@ -1,0 +1,165 @@
+/* Extrasmall devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+}
+
+*{
+    box-sizing: border-box;
+}
+#nav-bar{
+    background-color: rgba(33, 37, 41,0.7);
+    background-size: auto;
+    padding-bottom: 20px; 
+    /* padding for covering the li elements with bgcolor  */
+}
+nav>h1{
+    color: wheat;
+    padding: 15px 25px;
+    font-family: 'Special Elite', cursive;
+    font-weight: 900;
+}
+ul{
+    list-style: none;
+    text-align: end;
+}
+ul>li{
+    display: inline;
+    padding: 20px 30px;
+    
+}
+li>a{
+    text-decoration: none;
+    color: wheat;
+    text-transform: uppercase;
+    font-family: 'Special Elite', cursive;
+    font-weight: 900;
+    /* for nav-bar */
+}
+li>a:hover{
+    text-decoration:none;
+    color: black;
+}
+body{
+    background-image: url("../img/bg-callout.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background image */
+}
+#welcome-section{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div>h1{
+    font-family: 'Special Elite', cursive;
+}
+div>h3{
+    font-family: 'Pacifico', cursive;
+}
+div>h1,div>h3{ 
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    /* for the welcome-section */
+}
+#Fcc-projects{
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+    text-transform: capitalize;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 900;
+    font-size: xx-large;
+}
+#projects{
+    background-color: white;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    align-content: center;
+    column-gap:10px;
+    row-gap: 10px;
+}
+#projects div{
+    border: 2px solid black;
+}
+#project-tile-1{
+    background: url("../img/project-tribute.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    /* Flex display for the section to be displayed at the end */
+}
+#project-tile-2{        /*project-tiles are separate tile in which image is embeded and the project is linked*/
+    background: url("../img/project-survey.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+#project-tile-3{        /*Since this div contains two items it has align-items property */
+    background: url("../img/project-prod.JPG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+#project-tile-4{
+    background: url("../img/project-tech.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    
+}
+#project-tile-1:hover,#project-tile-2:hover,#project-tile-3:hover,#project-tile-4:hover{
+    transform: scale(1.25);
+    transition: transform .5s ease-in-out;
+}
+a:hover{
+    text-decoration: none;
+}
+section {   /* section are inside project-tile divs */
+    
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer{         /*Contains credits and links*/
+    background-color: rgba(0,0,0,0.9);
+    height: 20vh;
+}
+#credits{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    padding: 50px;
+}
+#About-Me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <style>
+    #div1{
+      text-align: center;
+    }
+    #title{
+      text-align:center;
+    }
+    #description{
+      margin-left:50px;
+    }
+    #survey-form{
+      margin:10px 50px 20px 50px;
+    }
+    .boxes{
+      margin-left:70px;
+    }
+    </style>
+<title>Survey Form</title>
+</head>
+<body>
+  <div class="bg-secondary">
+    <div class="container-fluid col-md-6 bg-light"id="div1">
+      <h1 id="title"class="bg-dark text-light">Survey Form</h1>
+      <p id="description"><strong>It is Survey about the Musicians in Kollywood</strong></p>
+      <form id="survey-form">
+        <div class="row">
+          <div class="col-md-3">
+            <label id="name-label">Name:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" required placeholder="Ex:Abhishek Nair"id="name"class="boxes">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="dropdown">Gender:</label>
+          </div>
+          <div class="col-md-3">
+            <select id="dropdown"class="boxes">
+              <option value="male" selected>Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <label id="email-label">Email:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="email" required placeholder="Ex:abc@xyz.com"id="email"class="boxes">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <label id="number-label">Number:</label>
+          </div>
+          <div class="col-md-3">
+            <input type="number"placeholder="ex:24,43"id="number" min="1"max="40"class="boxes">
+          </div>
+        </div>
+        <br>
+        <br>
+        <label for="Q1">1) Who is your favourite Music director?</label>
+        <br>
+        <div class="column ">
+          (a)<input id="Q1" type="radio" value="A.R.Rahman"name="music">A.R.Rahman
+          <br>
+          (b)<input id="Q1" type="radio" value="Anirudh"name="music">Anirudh
+          <br>
+          (c)<input id="Q1" type="radio" value="Yuvan"name="music">Yuvan
+          <br>
+          (d)<input id="Q1" type="radio" value="Harris"name="music">Harris
+          <br>
+          <br>
+        </div>
+        <label for="Q2">2)Which are the films that are composed by Anirudh in this list?(select one or more than one option)</label>
+        <br>
+        <div class="column">
+          (a)<input id="Q2" type="checkbox" value="Kaththi" name="film">Kaththi
+          <br>
+          (b)<input id="Q2" type="checkbox" value="Viswasam" name="film">Viswasam
+          <br>
+          (c)<input id="Q2" type="checkbox" value="Velaikaran" name="film">Velaikaran
+          <br>
+          (d)<input id="Q2" type="checkbox" value="V.I.P-2" name="film">V.I.P-2
+          <br>
+          <br>
+        </div>
+        <textarea name="name"rows="8"cols="80"placeholder="Additional comments"class="container-fluid"></textarea>
+        <br>
+        <button type="submit" value="Submit"id="submit">Submit</button>
+      </form>
+    
+    </div>
+  </div>
+</body>

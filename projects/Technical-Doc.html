@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #navbar{
+            width: 30%;
+        }
+
+        @media(min-width:800px){
+            
+            nav li{
+                display: inline-block;
+                padding-right: 10px;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .main-section{
+            display: grid;
+            border:solid;
+            border-color: rgb(73, 204, 102);
+        }
+        header{
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(35, 129, 55);
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page!</title>
+</head>
+<body>
+    <div class="dropdown">
+        <nav id="navbar">
+            <header>Autodesk</header>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Autodesk Fusion 360
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#Overview"class="nav-link">Overview</a></li>
+                <li><a href="#Features"class="nav-link">Features</a></li>
+                <li><a href="#3D_design_&_Modeling"class="nav-link">3D design & modeling</a></li>
+                <li><a href="#Electronics"class="nav-link">Electronics</a></li>
+                <li><a href="#Simulation"class="nav-link">Simulation</a></li>
+                <li><a href="#Generative_Design"class="nav-link">Generative Design</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+    <main id="main-doc">
+        <section class="main-section" id="Overview">
+            <header><h3>Overview</h3></header>
+            <p><code> Autodesk Fusion 360</code> is a cloud-based 3D CAD, CAM, and CAE platform for product development. It combines industrial and mechanical design, simulation, collaboration, and machining in a single package.</p>
+            <p>Fusion 360 is natively written for both Mac and PC, allowing you to use your preferred OS or both at no additional cost.</p>
+        </section>
+        <section class="main-section" id="Features">
+            <header>Features</header>
+            <ul>
+                <li>3D design & modeling</li>
+                <li>Electronics</li>
+                <li>Simulation</li>
+                <li>Generative Design</li>
+                <li><a href=https://www.autodesk.com/products/fusion-360/overview?_ga=2.66806951.868905240.1583841449-1507433529.1576673380# target="_blank">To learn more! Click here!!</a></li>
+            </ul>
+        </section>
+        <section class="main-section" id="3D_design_&_Modeling">
+            <header>3D design & modeling</header>
+            <p>In<code> 3D computer graphics</code>, 3D modeling is the process of developing a mathematical representation of any surface of an object (either inanimate or living) in three dimensions via specialized <code> software</code>. The product is called a 3D model. Someone who works with 3D models may be referred to as a 3D artist. It can be displayed as a two-dimensional image through a process called 3D rendering or used in a computer simulation of physical phenomena. The model can also be physically created using 3D printing devices.</p>
+            <p>Models may be created automatically or manually. The manual modeling process of preparing geometric data for 3D computer graphics is similar to plastic arts such as sculpting.
+                3D modeling software is a class of 3D computer graphics software used to produce 3D models. Individual programs of this class are called modeling applications or modelers.</p>
+        </section>
+        <section class="main-section" id="Electronics">
+            <header>Electronics</header>
+            <p><strong>Schematic Capture</strong>-Bring your spark of an idea to life with a complete set of schematic editing tools.</p>
+            <p><strong>PCB Layout</strong>-Connect your ideas together in a complete design with complete <code> PCB layout</code> tools.</p>
+            <p><strong>Design For Manufacturability</strong>-Stay true to your manufacturing requirements with customizable design rules.</p>
+        </section>
+        <section class="main-section" id="Simulation">
+            <header>Simulation</header>
+            <p><strong>Cloud Simulation</strong>-Using<code> cloud credits</code>, setup and analyze multiple tests quickly while eliminating the need for expensive hardware.</p>
+            <p><strong>Study Breadth</strong>-Test for up to eight different failure criterion, including nonlinear, event, and more.</p>
+        </section>
+        <section class="main-section" id="Generative_Design">
+            <header>Generative Design</header>
+            <p><strong>Define Project Objectives</strong>-Identify your design requirements, constraints, materials, and manufacturing options to generate manufacturing-ready designs.</p>
+            <p><strong>Generate & Explore Designs</strong>-Simultaneously generate multiple options of your design in order to meet manufacturing process and product performance requirements.</p>
+            <p><strong>Editable Results</strong>-Avoid lengthy, manual import-export processes. Choose your outcome and start editing in your modeling environment immediately.</p>
+        </section>
+    </main>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
