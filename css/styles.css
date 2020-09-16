@@ -83,8 +83,6 @@ div>h1,div>h3{
     grid-template-rows: 300px 300px;
     justify-content: center;
     align-content: center;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 }
 #project-tile-1{
     background: url("../img/project-tribute.JPG");
